@@ -126,7 +126,9 @@ namespace Domain.ProjectSettingAggregation
 ```
 In the code above, the DefineProject is inherited in the RequestToCreate abstract class, `RequestToCreate<Project, string>`. RequestToCreate abstraction is located in Domainify. Domain namespace that belongs to Domainify. The first generic type should be the Project entity (the entity that the request belongs to) and the second generic type is the type of Id of the entity that it should be returned and that is String here.
 
-There is the Name field, It is the name of a desired project that should be defined. It has been decorated with the BindTo attribute.
-To remove repetitive defining annotations for the name field of this command, and the name field of another command like 'ChangeProjectName', we use the BindTo attribute. Because we have defined annotations for the name field for the project entity earlier, the BindTo attribute is efficient for this purpose and we can bind the name field of the 'RequestToCreate' to the name field of the project entity, and the name field of the RequestToCreate inherited all attributes of the name filed of the entity project.
+There is the Name property, It is the name of a desired project that should be defined. It is marked as private set to enforce encapsulation and is initialized through the constructor. It has been decorated with the BindTo attribute.
+To remove repetitive defining annotations for the name property of this command, and the name property of another command like 'ChangeProjectName', we use the BindTo attribute. Because we have defined annotations for the name property for the project entity earlier, the BindTo attribute is efficient for this purpose and we can bind the name property of the 'RequestToCreate' to the name property of the project entity, and the name property of the RequestToCreate inherited all attributes of the name filed of the entity project.
 
-`[BindTo(typeof(Project), nameof(Project.Name))]`: In the first argument, the desired entity is determined and in the second argument, the desired field is determined.
+`[BindTo(typeof(Project), nameof(Project.Name))]`: In the first argument, the desired entity is determined and in the second argument, the desired property is determined.
+
+The constructor for the DefineProject class must initialize all required properties. Below is the current implementation which initializes the Name property.
