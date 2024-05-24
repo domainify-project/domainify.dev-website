@@ -17,7 +17,7 @@ const FeatureList = [
     Img: require('@site/static/img/focus-on-the-business-logic.png').default,
     description: (
       <>
-        The main goal of Domainify is to reduce codes and simply cover most technical cases for developers to be prepared to focus on the business logic.
+        The main purpose of Domainify is to provide a strong and flexible structure for covering most technical cases so developers can focus on business logic.
       </>
     ),
   },

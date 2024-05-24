@@ -6,11 +6,12 @@ sidebar_position: 1
 
 Article **.** 5/18/2024 **.** [Arash Tafakori](https://github.com/arashtafakori)
 
-Domainify is an open-source and lightweight library that has been created based on Clean Architecture and DDD (Domain-Driven Design) approaches. This library helps developers to boost the process of development to produce scaled Backed-End and be able to implement details like invariants, and specifications, and further helps them to architect complexity easily. The code volume of a project that has been developed based on the domainify is significantly less. It provides an infrastructure for developers to focus on the business instead of spending time on the code and solving challenges related to the mass and repetitive codes.
+Domainify is an open-source and lightweight library created based on Clean Architecture and DDD (Domain-Driven Design) approaches. This library helps developers boost the development process to produce scaled Backed-End and implement details like invariants, and specifications, and further helps them to architect complexity easily. It provides a strong and flexible structure for developers to focus on business logic.
 
-One of the biggest concerns that developers have are scalability and how to design a project in the best way that they can develop and scale. The experienced try to develop projects based on clean architecture and test-driven development practices and further domain-driven design too, It is helpful and can be effective. But for most developers, there are some misunderstandings and during the development, some needs will appear and they do not know how they can solve them and implement them correctly. Often it takes much time and is costly too. Therefore, a suitable infrastructure is important to start a project.
+One of the biggest concerns developers have is scalability and how to design a project in the best way they can develop and scale. Some developers try to develop projects based on clean architecture, test-driven development practices, and further domain-driven design too, It is helpful and can be effective. But for some developers, there are some misunderstandings and during the development, some needs will appear and they do not know how to solve them and implement them correctly. Often it takes much time and is costly too. Therefore, a suitable infrastructure is important to start a project.
 
-In the following, in addition to how you will learn how to use Domainify in your project, you will learn how to correctly implement a Backend service according to DDD (Domain-Driven Design) practices.
+In the following, you will learn how to use Domainify in your project, you will learn how to correctly implement a Backend service according to DDD (Domain-Driven Design) practices.
+Notice that This tutorial has been written for implementing a project based on DDD by Domainify, not based on DDD rules completely. For How to implement a project based on DDD rules and TDD without using any libraries, you can refer to this source on GitHub [ddd-tdd-workshop](https://github.com/arashtafakori/ddd-tdd-workshop).
 
 This is the first released version of Swift since 1.0.1.6.
 
